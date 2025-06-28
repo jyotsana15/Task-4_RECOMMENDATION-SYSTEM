@@ -1,4 +1,4 @@
-# RECOMMENDATION SYSTEM
+#🎬 Movie Recommendation System using SVD
 
 *COMPANY*: CODTECH IT SOLUTIONS
 
@@ -12,7 +12,6 @@
 
 *MENTOR*: NEELA SANTOSH
 
-🎬 Movie Recommendation System using SVD
 📖 Introduction
 This project is a Movie Recommendation System built with Collaborative Filtering and Singular Value Decomposition (SVD). It predicts user ratings for movies that users haven't seen yet, based on existing ratings, and suggests movies accordingly. The system uses the MovieLens dataset (u.data and u.item), which is a well-known dataset for recommendation engines.
 
@@ -61,4 +60,4 @@ For a given user, the system recommends the top N movies with the highest predic
 
 🚀 How to Run
 Make sure you have Python and pip installed. Run the script:
-<pre><code>python recommend.py</code></pre>
+<pre><code>python RecommendationSystem.py</code></pre>
