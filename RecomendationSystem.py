@@ -7,10 +7,10 @@ from math import sqrt
 
 # Load the dataset
 # You can adjust the path based on where you saved the dataset
-ratings_df = pd.read_csv('C:\\Users\\jyots\\Desktop\\CodTech\\Task-4_RECOMMENDATION SYSTEM\\ml-100k\\u.data', delimiter='\t', names=['user_id', 'item_id', 'rating', 'timestamp'])
+ratings_df = pd.read_csv('u.data', names=['user_id', 'item_id', 'rating', 'timestamp'])
 
 # Load movie data to get movie titles (if available)
-movies_df = pd.read_csv('C:\\Users\\jyots\\Desktop\\CodTech\\Task-4_RECOMMENDATION SYSTEM\\ml-100k\\u.item', delimiter='|', encoding='latin-1', header=None, names=['movie_id', 'movie_title', 'release_date', 'video_release_date', 'IMDb_URL'])
+movies_df = pd.read_csv('u.item', encoding='latin-1', header=None, names=['movie_id', 'movie_title', 'release_date', 'video_release_date', 'IMDb_URL'])
 
 # Preprocessing: Merging datasets and removing unnecessary columns
 ratings_df = pd.merge(ratings_df, movies_df[['movie_id', 'movie_title']], left_on='item_id', right_on='movie_id')
